@@ -1,0 +1,51 @@
+hostname
+-ash: hostname: not found
+root@OpenWrt:~# uname -a
+Linux OpenWrt 4.14.94 #0 SMP Wed Jan 23 17:06:49 2019 x86_64 GNU/Linux
+root@OpenWrt:~# uptime
+ 15:20:48 up 30 min,  load average: 0.00, 0.00, 0.00
+root@OpenWrt:~# ifconfig
+br-mng    Link encap:Ethernet  HWaddr 08:00:27:A0:F3:8C  
+          inet addr:192.168.56.2  Bcast:192.168.56.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fea0:f38c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:108 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:7 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:7358 (7.1 KiB)  TX bytes:746 (746.0 B)
+
+eth0      Link encap:Ethernet  HWaddr 08:00:27:A0:F3:8C  
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:110 errors:0 dropped:2 overruns:0 frame:0
+          TX packets:7 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:8990 (8.7 KiB)  TX bytes:746 (746.0 B)
+
+eth1      Link encap:Ethernet  HWaddr 08:00:27:5A:75:51  
+          inet addr:10.0.3.15  Bcast:10.0.3.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fe5a:7551/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:2 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:9 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1180 (1.1 KiB)  TX bytes:1510 (1.4 KiB)
+
+eth2      Link encap:Ethernet  HWaddr 08:00:27:90:69:CF  
+          inet addr:192.168.88.235  Bcast:192.168.88.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fe90:69cf/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1449 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:229 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:102037 (99.6 KiB)  TX bytes:24508 (23.9 KiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:20 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:20 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1893 (1.8 KiB)  TX bytes:1893 (1.8 KiB)
+
+root@OpenWrt:~# 

@@ -1,0 +1,33 @@
+hostname
+raspberrypi
+pi@raspberrypi:~$ uname -a
+Linux raspberrypi 4.14.79-v7+ #1159 SMP Sun Nov 4 17:50:20 GMT 2018 armv7l GNU/Linux
+pi@raspberrypi:~$ uptime
+ 15:20:32 up 19:38,  1 user,  load average: 0.15, 0.03, 0.01
+pi@raspberrypi:~$ ifconfig
+eth0: flags=4099<UP,BROADCAST,MULTICAST>  mtu 1500
+        ether b8:27:eb:3d:28:8d  txqueuelen 1000  (Ethernet)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 7283  bytes 2593073 (2.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7283  bytes 2593073 (2.4 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.88.252  netmask 255.255.255.0  broadcast 192.168.88.255
+        inet6 fe80::6911:be22:8344:7ed9  prefixlen 64  scopeid 0x20<link>
+        ether b8:27:eb:68:7d:d8  txqueuelen 1000  (Ethernet)
+        RX packets 10993  bytes 765785 (747.8 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5650  bytes 667582 (651.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+pi@raspberrypi:~$ 

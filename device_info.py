@@ -27,7 +27,6 @@ for device in devices.keys():
     new_connection = connection.invoke_shell()
     output = clear_buffer(new_connection)
     time.sleep(2)
-    new_connection.send("terminal length 0\n")
     output = clear_buffer(new_connection)
     with open(outputFileName, 'wb') as f:
         for command in commands:
