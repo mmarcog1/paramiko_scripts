@@ -1,0 +1,4 @@
+hostname
+uname -a
+uptime
+ifconfig
